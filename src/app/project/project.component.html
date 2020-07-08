@@ -1,0 +1,6 @@
+<section class="edit">
+  <label for="">Project:</label>
+  <input type="text" [(ngModel)]="projectname">
+  <span> [ {{projectname.length}} ] </span>
+  <input type="button" value="Add New" (click)="onAddNewClick()">
+</section>

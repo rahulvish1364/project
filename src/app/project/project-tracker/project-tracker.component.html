@@ -1,0 +1,11 @@
+<section class="list">
+  <ul>
+    <li *ngFor="let proj of Projects">
+      <span>Project ID: {{proj.id}}</span>
+      <span class="bugname" (click)="onNewProjectCreated(proj)">
+        {{proj.name}}
+      </span>
+      <button (click)="delete(proj)">Delete</button>
+    </li>
+  </ul>
+</section>
